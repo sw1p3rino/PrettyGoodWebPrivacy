@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGP Key Storage</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 10px; width: 350px; } /* Thrice the width */
+        textarea { width: 100%; height: 100px; } /* Keep height, increase width */
+        input[type="text"] { width: calc(100% - 20px); } /* Full-width input */
+        h2, label, button { font-size: 1.2em; } /* Optional: Larger text */
+    </style>
+</head>
+<body>
+    <h2>PGP Key Storage</h2>
+    <label for="pgpKey">PGP Private Key:</label>
+    <textarea id="pgpKey" placeholder="Enter your PGP private key here..."></textarea>
+    
+    <label for="passphrase">Passphrase (optional):</label>
+    <input type="text" id="passphrase" placeholder="Enter passphrase here..." />
+    
+    <button id="saveButton">Save Key</button>
+    <button id="loadButton">Load Key</button>
+
+    <h3 id="statusMessage"></h3>
+
+    <script src="popup.js"></script>
+</body>
+</html>
